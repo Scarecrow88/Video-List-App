@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div svg {
+    width: 23px;
+    height: 23px;
+    vertical-align: top;
+    cursor: pointer;
+} 
+div svg path {
+    fill: #000 !important;
+}
+.videocontentbox {
+    width: 100%;
+    max-width: 950px;
+    padding-bottom: 9px;
+    margin: 10px auto;
+    background-color: grey;
+    font-family: sans-serif;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 7px 30px;
+    row-gap: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.buttonsection {
+    display: grid;
+    grid-template-columns: 1fr 30px;
+    padding-left: 15px;
+    padding-right: 7px;
+}
+.leftbox {
+    display: grid;
+    grid-template-columns: repeat(4, 30px) 80px 180px;
+    column-gap: 12px;
+    align-items: center;
+}
+.auxbar {
+    background-color: silver;
+    height: 7px;
+    cursor: pointer;
+}
+.targetbar {
+    background-color: #ff0000;
+    height: 100%;
+    
+}
+[type = "range"] {
+    width: 70%;
+    height: 10px;
+    margin-top: 6.5px;
+    margin-left: 5px;
+    appearance: none;
+}
+[type = "range"]::-webkit-slider-thumb {
+    appearance: none;
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    cursor: pointer;
+}
+video {
+    width: 100%;
+}
+@media screen and (max-width: 1072px) {
+    .videocontentbox {
+        width: 99%;
+    }
+}
+@media screen and (max-width: 980px) {
+    .videocontentbox {
+        width: 92%;
+    }
+}
+@media screen and (max-width: 670px) {
+    div svg {
+        width: 27px;
+        height: 27px;
+        vertical-align: top;
+    }
+    .videocontentbox {
+        height: 100%;
+        width: 100%;
+        max-width: 900px;
+        margin: 0;
+    }
+    .leftbox {
+        grid-template-columns:repeat(4, 35px) 70px 100px;
+        column-gap: 3px;
+        font-size: 13px;
+    }
+    .volumebutton div svg {
+        width: 14px;
+    }
+}
+@media screen and (max-width: 375px) {
+    div svg {
+        width: 20px;
+        height: 20px;
+        vertical-align: top;
+    }
+    .leftbox {
+        grid-template-columns:repeat(4, 15px) 70px 60px;
+        column-gap: 15px;
+        font-size: 11px;
+    }
+}
+@media screen and (max-width: 280px) {
+    div svg {
+        width: 15px;
+        height: 15px;
+        vertical-align: top;
+    }
+    .leftbox {
+        grid-template-columns:repeat(4, 5px) 70px 60px;
+        column-gap: 15px;
+        font-size: 11px;
+    }
+    .rightbox {
+        padding-top: 7px;
+    }
+    [type = "range"] {
+        width: 70%;
+        height: 10px;
+        margin-top: 2.5px;
+        margin-left: 5px;
+        appearance: none;
+    }
+    .statusbox {
+        font-size: 10px;
+    }
+}

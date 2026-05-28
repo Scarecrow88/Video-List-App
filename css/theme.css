@@ -1,0 +1,12 @@
+:root {
+    --first-color: #113F32;
+    --second-color: #0E613E;
+    --third-color: #258F49;
+    --fourth-color: #76C852;
+    --fifth-color: #E4FF62;
+    --color-shadow: #000000;
+    --text-color: #FFFFFF;
+    --scrollbar-track: #E4FF62;
+    --scrollbar-thumb: #113F32;
+    --first-gradient: linear-gradient(90deg,rgba(192, 205, 209, 1) 0%, rgba(159, 212, 110, 1) 51%, rgba(81, 138, 93, 1) 100%);
+}
